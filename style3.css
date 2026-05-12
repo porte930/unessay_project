@@ -83,3 +83,38 @@ body {
 
   color: white;
 }
+
+/* TITLE BOX */
+.title-box {
+  position: absolute;
+
+  top: 30px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  padding: 15px 40px;
+
+  background: rgba(70, 40, 15, 0.95);
+
+  border: 3px solid #8b5a2b;
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 0 30px rgba(0,0,0,0.8),
+    0 0 20px rgba(139, 90, 43, 0.5);
+
+  z-index: 10;
+}
+
+/* TITLE TEXT */
+.title-box h1 {
+  margin: 0;
+
+  font-size: 55px;
+
+  color: #d2a679;
+
+  letter-spacing: 2px;
+}
