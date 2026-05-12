@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "myfont";
+  src: url("font/myfont.ttf");
+}
+
+* {
+cursor: url("img/sword.cur"), auto;
+}
+
+/* PAGE */
+body {
+  margin: 0;
+  padding: 40px;
+
+  background-color: white;
+
+  font-family: "myfont";
+}
+
+/* TITLE */
+.title {
+  text-align: center;
+
+  font-size: 50px;
+  margin-bottom: 60px;
+
+  color: black;
+}
+
+/* MAIN CONTAINER */
+.connections-container {
+  display: flex;
+  flex-direction: column;
+
+  gap: 80px;
+}
+
+/* EACH ROW */
+.connection-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 40px;
+}
+
+/* IMAGES */
+.side-image {
+  width: 300px;
+  height: 220px;
+
+  object-fit: cover;
+
+  border-radius: 10px;
+
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+/* MIDDLE SECTION */
+.middle-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 250px;
+}
+
+/* ARROW */
+.arrow {
+  font-size: 80px;
+  color: black;
+
+  margin-bottom: 15px;
+}
+
+/* TEXT */
+.connection-text {
+  text-align: center;
+
+  font-size: 18px;
+  line-height: 1.5;
+
+  color: black;
+}

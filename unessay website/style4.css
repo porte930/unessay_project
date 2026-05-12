@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "myfont";
+  src: url("font/myfont.ttf");
+}
+
+* {
+cursor: url("img/sword.cur"), auto;
+}
+
+/* Background Image */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "myfont";
+
+  background-image: url("img/wildfire.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  height: 100vh;
+  color: white;
+}
+
+/* Space at top + title styling */
+.title-box {
+  text-align: center;
+  padding-top: 40px;
+  margin-bottom: 60px;
+}
+
+.title-box h1 {
+  display: inline-block;
+
+  font-size: 64px;
+  padding: 20px 40px;
+
+  border: 3px solid orange;
+  border-radius: 15px;
+
+  background-color: rgba(0, 0, 0, 0.5);
+
+  box-shadow: 0 0 20px orange;
+}
+
+/* Main layout */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  padding: 0 60px;
+  gap: 40px;
+}
+
+/* Video section */
+.video-box {
+  width: 50%;
+}
+
+.video-box video {
+  width: 100%;
+
+  border: 3px solid orange;
+  border-radius: 15px;
+
+  box-shadow: 0 0 20px orange;
+}
+
+/* Text section */
+.text-box {
+  width: 40%;
+
+  padding: 25px;
+
+  background-color: rgba(0, 0, 0, 0.6);
+
+  border: 3px solid orange;
+  border-radius: 15px;
+
+  box-shadow: 0 0 20px orange;
+}
+
+.text-box h2 {
+  margin-top: 0;
+  color: orange;
+}
+
+.text-box p {
+  line-height: 1.7;
+  font-size: 18px;
+}
