@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>inthistown.unessay</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+
+<body>
+
+  <div id="startscreen">
+  click to enter
+</div>
+<div class="fog"></div>
+
+   <!-- TOP -->
+  <a href="page1.html" class="btn" style="top: 20px; left: 50%; transform: translateX(-50%);">
+    Background Info
+  </a>
+
+  <!-- LEFT SIDE -->
+  <a href="page2.html" class="btn" style="top: 20%; left: 260px;">
+    Sources
+  </a>
+
+  <a href="page5.html" class="btn" style="top: 55%; left: 155px;">
+    Conclusion
+  </a>
+
+  <!-- RIGHT SIDE -->
+  <a href="page3.html" class="btn" style="top: 30%; right: 20px;">
+    Centrelia
+  </a>
+
+  <a href="page4.html" class="btn" style="top: 70%; right: 20px;">
+    Forest Fires
+  </a>
+
+  <!-- BOTTOM -->
+  <a href="page6.html" class="btn" style="bottom: 20px; left: 30%;">
+    Western Conception
+  </a>
+
+  <a href="page7.html" class="btn" style="bottom: 20px; right: 30%;">
+    Unnatural Disasters
+  </a>
+
+  <audio id="music" loop>
+  <source src="music/over.mp3" autoplay type="audio/mpeg">
+</audio>
+
+<script>
+const startScreen = document.getElementById("startscreen");
+const music = document.getElementById("music");
+
+/* CHECK IF USER ALREADY ENTERED */
+if (sessionStorage.getItem("entered") === "yes") {
+  startScreen.style.display = "none";
+}
+
+/* CLICK TO ENTER */
+startScreen.onclick = function() {
+  music.play();
+
+  startScreen.style.display = "none";
+
+  /* SAVE THAT USER ENTERED */
+  sessionStorage.setItem("entered", "yes");
+};
+</script>
+
+
+
+
+
+</body>
+</html>
