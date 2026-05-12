@@ -1,0 +1,83 @@
+
+@font-face {
+  font-family: "myfont";
+  src: url("font/myfont.ttf");
+}
+
+
+* {
+  cursor: url("img/sword.cur"), auto;
+}
+
+
+/* PAGE */
+body {
+  margin: 0;
+  padding: 0;
+
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "myfont";
+
+  /* BACKGROUND IMAGE */
+  background-image: url("img/remake.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* CENTER CONTAINER */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+}
+
+/* TEXT BOX */
+.text-box {
+  width: 60%;
+  max-width: 800px;
+
+  padding: 40px;
+
+  background: rgba(20, 20, 20, 0.75);
+
+  border-radius: 20px;
+
+  /* BLACK GLOW */
+  box-shadow:
+    0 0 20px rgba(0,0,0,0.9),
+    0 0 40px rgba(0,0,0,0.8),
+    0 0 80px rgba(0,0,0,0.7);
+
+  color: white;
+
+  text-align: center;
+}
+
+/* TITLE */
+.text-box h1 {
+  margin-top: 0;
+
+  font-size: 60px;
+
+  letter-spacing: 2px;
+
+  text-shadow:
+    0 0 10px black,
+    0 0 20px black;
+}
+
+/* PARAGRAPHS */
+.text-box p {
+  font-size: 20px;
+
+  line-height: 1.8;
+}
